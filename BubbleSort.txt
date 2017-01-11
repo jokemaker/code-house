@@ -11,6 +11,8 @@ public class text {
 		}
 		for (int i = 0; i < arr.length-1; i++) {
 			for (int j = 0; j < arr.length-1-i; j++) {
+		for (int i = 0; i < arr.length-1; i++) {//Outer circulation "arr.length-1" rounds.
+			for (int j = 0; j < arr.length-1-i; j++) {//The "i" round of internal circulation "arr.length-1-i" times.
 				if (arr[j]>arr[j+1]) {
 					int t=arr[j];
 					arr[j]=arr[j+1];
@@ -34,3 +36,10 @@ Compare adjacent elements. If the first one is bigger than the second one, swap 
 Do the same for each pair of adjacent elements, starting from the first pair to the last pair at the end. At this point, the final element should be the largest number.
 Repeat the above steps for all elements, except for the last one.
 Keep repeating the above steps for fewer and fewer elements at a time until none of the pair of numbers needs to be compared.
+/*tips:
+*The Bubble Sorting algorithm works as follows: (from forward to forward)
+*Compare adjacent elements. If the first one is bigger than the second one, swap them both.
+*Do the same for each pair of adjacent elements, starting from the first pair to the last pair at the end. At this point, the final element should be the largest number.
+*Repeat the above steps for all elements, except for the last one.
+*Keep repeating the above steps for fewer and fewer elements at a time until none of the pair of numbers needs to be compared.
+**/
